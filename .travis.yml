@@ -2,6 +2,9 @@ language: go
 go:
   - "1.11.5"
 
-script:
+env:
+    - GOMAXPROCS=4 GO111MODULE=on  
+
+    script:
   - go get github.com/hashicorp/terraform
   - go build -o _bin/sunrise 
