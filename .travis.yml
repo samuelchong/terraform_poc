@@ -3,5 +3,5 @@ go:
     - 1.12.1
 
 script:
-  - go get github.com/hashicorp/terraform
+  - GO111MODULE=off go get github.com/hashicorp/terraform
   - go build -o _bin/sunrise 
