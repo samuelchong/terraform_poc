@@ -6,7 +6,7 @@ env:
     - GOMAXPROCS=4 GO111MODULE=on  
 
 script:
-  - go get github.com/hashicorp/terraform@v0.12.0
+  - go get github.com/hashicorp/terraform@v0.12.19
   - go mod tidy
   - go mod vendor
   - go build -o _bin/sunrise 
