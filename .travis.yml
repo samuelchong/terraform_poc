@@ -5,6 +5,7 @@ go:
 env:
     - GOMAXPROCS=4 GO111MODULE=on  
 
-    script:
+script:
+  - go get github.com/kardianos/govendor
   - go get github.com/hashicorp/terraform
   - go build -o _bin/sunrise 
